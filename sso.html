@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Night Fury - SSO</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body {
+            background-image : url("img/background.jpg")
+        }
+    </style>
+  </head>
+
+
+  <body>
+    <!--Auto Fill-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <img src="img/logo.png" style="margin-top:25px" height="150"/>
+                <h4 class="white-text" style="margin-top:0px; font-family:'Bebas Neue', cursive">Registration Form</h4>
+                <div class="card" style="border-radius:15px">
+                    <div class="card-content">
+                        <div class="input-field">
+                            <label for="fullname">Full Name</label>
+                            <input value="Nilatil Moena" id="fullname" type="text" class="validate">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="nik">NIK</label>
+                            <input value="3175012403000004" id="nik" type="number" class="validate">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="codename">Code Name</label>
+                            <input id="codename" type="text" value="nilamoena" class="validate">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="birthdate">Birth Date</label>
+                            <input id="birthdate" type="text" value="04 March 2000" class="validate">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="address">Address</label>
+                            <input id="address" type="text" value="Galur Sari Raya" class="validate">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="profession">Profession</label>
+                            <input id="profession" type="text" value="Computer Science Student" class="validate">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="skillset">Skillset</label>
+                            <textarea id="skillset" class="materialize-textarea">-</textarea>
+                        </div>
+
+                        <p class="left-align">
+                            <span style="color: black;">Member Type : </span><br>
+                            <label>
+                                <input name="group1" type="radio" value="civilian"/>
+                                <span>Civilian</span><br>
+                            </label>
+                            <label>
+                                <input name="group1" type="radio" value="member" checked/>
+                                <span>Guild Member</span>
+                            </label>
+                        </p><br>
+
+                        <p class="left-align">
+                            <span style="color: black;">Join Period : </span><br>
+                            <label>
+                                <input name="group2" type="radio" value="1month"/>
+                                <span>1-month</span><br>
+                            </label>
+                            <label>
+                                <input name="group2" value="3months" type="radio"/>
+                                <span>3-months</span><br>
+                            </label>
+                            <label>
+                                <input name="group2" type="radio" value="halfyear" checked/>
+                                <span>half year</span><br>
+                            </label>
+                            <label>
+                                <input name="group2" type="radio" value="year"/>
+                                <span>year</span>
+                            </label>
+                        </p><br>
+
+                        <a href="successful.html" class="btn-large waves-effect waves-dark blue darken-4 white-text" style="width:50%; font-size:25px; font-family:'Bebas Neue', cursive; border-radius:15px">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="grey darken-4 center-align">
+        <div class="container grey-text" style="font-size:20px">© 2020 Copyright The Night Fury | Nilatil Moena
+        </div>
+    </footer>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
