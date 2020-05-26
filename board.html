@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Night Fury - Notice Board</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+      body {
+        background-image : url("img/background.jpg");
+        background-color: black;
+      }
+      form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 50%;
+            height: 20%;
+            background: #ffffff;
+        }
+
+        form.example button {
+            float: left;
+            width: 10%;
+            height: 44px;
+            padding: 10px;
+            background: #0d47a1;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+
+        form.example button:hover {
+            background: #0d47a1;
+        }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!--Header-->
+    <div class="navbar-fixed">
+        <nav class="red accent-4">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><img src ="img/header.png" style="height:60px; margin-left:10px"></a>
+                <ul class="right">
+                    <li><a href="index.html" class="waves-effect waves-light btn black" style="border-radius:10px"><b>Home</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h2 class="white-text" style="margin-top:15px; margin-bottom: 0px; font-family:'Bebas Neue'">Notice Board</h2>
+        <form class="example" action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="material-icons">search</i></button>
+        </form>
+
+        <!--Job 1-->
+          <div class="card indigo lighten-5" style="border-radius:15px">
+            <div class="card-content center-align">
+              <img style="margin-top:0px; margin-bottom:0px; width: 50px;" src="img/bronze.png">
+              <h5 class="black-text" style="font-family: 'Balsamiq Sans'"><a href="">Covid-19 Poster</a><br>• Issuer : phs1116<br>• Time Limit : 7 Days<br>• Minimum Rank : Bronze<br>• Reward : Rp150.000,-<br><a href="" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Take</a></h5>
+            </div>
+          </div>
+
+        <!--Job 2-->
+          <div class="card indigo lighten-5" style="border-radius:15px">
+            <div class="card-content center-align">
+              <img style="margin-top:0px; margin-bottom:0px; width: 50px;" src="img/iron.png">
+              <h5 class="black-text" style="font-family: 'Balsamiq Sans'"><a href="">3x3 Instagram Feeds</a><br>• Issuer : skawngur<br>• Time Limit : 3 Days<br>• Minimum Rank : Iron<br>• Reward : Rp100.000,-<br><a href="" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Take</a></h5>
+            </div>
+          </div>
+
+        <!--Job 3-->
+          <div class="card indigo lighten-5" style="border-radius:15px">
+            <div class="card-content center-align">
+              <img style="margin-top:0px; margin-bottom:0px; width: 50px;" src="img/silver.png">
+              <h5 class="black-text" style="font-family: 'Balsamiq Sans'"><a href="">Donation Poster</a><br>• Issuer : hihyunwoo<br>• Time Limit : 2 Days<br>• Minimum Rank : Silver<br>• Reward : Rp100.000,-<br><a href="" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Take</a></h5>
+            </div>
+          </div>
+        
+        <h1 class="right-align" style="margin-top:0px"><a href="" class="btn-large waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">See more</a></h1>
+    
+    </div>
+
+    <!--Footer-->
+    <footer class="grey darken-4 center-align">
+        <div class="container grey-text" style="font-size:20px">© 2020 The Night Fury | Nilatil Moena
+        </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>

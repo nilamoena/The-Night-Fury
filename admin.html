@@ -1,0 +1,361 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>The Night Fury - Admin</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+        body {
+            background-image: url('img/background.jpg');
+            background-color: black;
+        }
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #d50000;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            margin-left: 30px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 30px;
+            cursor: pointer;
+            background-color: #d50000;
+            color: white;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #d50000;
+        }
+
+        #main {
+            transition: margin-left .5s;
+        }
+
+        #profile {
+            transition: margin-left .5s;
+        }
+
+        #users {
+            transition: margin-left .5s;
+        }
+
+        #jobs {
+            transition: margin-left .5s;
+        }
+
+        table {
+            font-family: Balsamiq Sans;
+            font-size: medium;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            border: 2px solid #0d47a1;
+            background-color: white;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            border: 2px solid #0d47a1;
+            background-color: #cfd8dc;
+            font-size: 18px;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 50%;
+            height: 20%;
+            background: #ffffff;
+        }
+
+        form.example button {
+            float: left;
+            width: 10%;
+            height: 44px;
+            padding: 10px;
+            background: #0d47a1;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+
+        form.example button:hover {
+            background: #0d47a1;
+        }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+        }
+    </style>
+    </head>
+
+    <body>
+    <!--Header-->
+    <div class="navbar-fixed">
+        <nav class="red accent-4">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <img class="vertical-middle" style="margin-left: 30px; margin-bottom: 0px;" src="img/girl.png" alt="Logo" width="175">
+                <h5 style="margin-left: 50px; margin-top: 0px; margin-bottom: 0px;">Nilatil Moena</h5>
+                <h6 style="margin-left: 30px; margin-top: 0px; margin-bottom: 0px;">nilamoena4@gmail.com</h6>
+                <h6 style="margin-left: 70px; margin-top: 0px">Administrator</h6>
+                <a href="#profile">My Profile</a>
+                <a href="#users">List of Users</a>
+                <a href="#jobs">List of Jobs</a>
+            </div>
+            <a href="" class="brand-logo center"><img src ="img/header.png" style="height:60px"></a>
+            <ul class="right">
+                <li><a href="index.html" class="waves-effect waves-light btn black" style="border-radius:10px"><b>Log Out</b></a></li>
+            </ul>
+            <div id="main">
+                <button style="margin-left: 15px; margin-top: 15px;" class="openbtn" onclick="openNav()">☰</button>
+            </div>
+        </nav>
+    </div>
+
+    <!--My Profile-->
+    <div id="profile">
+        <h2 class="white-text" style="margin-left: 15px; margin-top:15px; margin-bottom: 0px; font-family:'Bebas Neue'">Admin dashboard</h2>
+        <h5 class="white-text" style="margin-left: 15px; margin-top: 0px; font-family:'Balsamiq Sans'">Welcome Nilatil Moena. Love to see you back</h5>
+        
+            <div class="row center-align" style="margin-top: 20px;">
+                <div class="col s12 m4">
+                    <div class="card yellow lighten-4" style="border-radius:15px">
+                        <div class="card-content">
+                                <a href="" class="black-text" style="font-family:'Bebas Neue'; font-size: 40px;"><i class="large material-icons left black-text" style="font-size: 50px">notifications_active</i>99 New Notifications</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col s12 m4">
+                    <div class="card green lighten-4" style="border-radius:15px">
+                        <div class="card-content">
+                            <a href="" class="black-text" style="font-family:'Bebas Neue'; font-size: 40px;"><i class="large material-icons left black-text" style="font-size: 50px">visibility</i>1325 daily visitors</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col s12 m4">
+                    <div class="card light-blue lighten-4" style="border-radius:15px">
+                        <div class="card-content">
+                            <a href="" class="black-text" style="font-family:'Bebas Neue'; font-size: 40px;"><i class="large material-icons left black-text" style="font-size: 50px">mail</i>15 new messages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <h2 class="white-text" style="margin-left: 15px; margin-top:15px; margin-bottom: 0px; font-family:'Bebas Neue'">Personal Information</h2>
+        <div class="row center-align">
+        <div class="col s12">
+        <div class="card" style="border-radius:15px">
+            <div class="card-content">
+                <img class="vertical-middle" src="img/girl.png" alt="Logo" width="175">
+                <h5 class="black-text" style="font-family:'Balsamiq Sans'">Full Name : Nilatil Moena</h5>
+                <h5 class="black-text" style="font-family:'Balsamiq Sans'">NIK : 3175012403000004</h5>
+                <h5 class="black-text" style="font-family:'Balsamiq Sans'">Username : nilamoena</h5>
+                <h5 class="black-text" style="font-family:'Balsamiq Sans'">E-mail Address : nilamoena4@gmail.com</h5>
+                <h5 class="black-text" style="font-family:'Balsamiq Sans'">Password : ********</h5>
+                <h5 class="black-text" style="font-family:'Balsamiq Sans'">Phone Number : +6289502439574</h5>
+                <h5 class="black-text" style="font-family:'Balsamiq Sans'">Gender : Female</h5>
+                <h5 class="black-text" style="font-family:'Balsamiq Sans'">Birthday : 04 March 2000</h5>
+                <h5 class="black-text" style="font-family:'Balsamiq Sans'">Address : Galur Sari Raya 13120</h5>
+
+                <a href="" class="btn-large waves-effect waves-dark blue darken-4 white-text" style="width:50%; font-size:25px; font-family:'Bebas Neue', cursive; border-radius:15px"><i class="large material-icons left white-text" style="font-size: 40px">create</i>Edit Profile</a>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div> 
+
+    <!--Users-->
+    <div id="users">
+        <h2 class="white-text" style="margin-left: 15px; margin-top:50px; margin-bottom: 0px; font-family:'Bebas Neue'">Users</h2>
+        <div class="row center-align">
+        <div class="col s12">
+        <form class="example" action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="material-icons">search</i></button>
+        </form>
+        <table>
+            <tr>
+              <th>Username</th>
+              <th>Full Name</th>
+              <th>Rank</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td><a href="#">mj777</a></td>
+              <td>Myungjun</td>
+              <td>Platinum</td>
+              <td>Active</td>
+              <td><a href="" class="btn-small waves-effect waves- red accent-4 white-text" style="border-radius:10px">Delete</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">jinjin</a></td>
+              <td>Jinwoo</td>
+              <td>Gold</td>
+              <td>Inactive</td>
+              <td><a href="" class="btn-small waves-effect waves- red accent-4 white-text" style="border-radius:10px">Delete</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">eunwooc</a></td>
+              <td>Lee Dongmin</td>
+              <td>Platinum</td>
+              <td>Inactive</td>
+              <td><a href="#" class="btn-small waves-effect waves- red accent-4 white-text" style="border-radius:10px">Delete</a></td>            
+            </tr>
+            <tr>
+              <td><a href="#">moonkong</a></td>
+              <td>Moonbin</td>
+              <td>Silver</td>
+              <td>Active</td>
+              <td><a href="#" class="btn-small waves-effect waves- red accent-4 white-text" style="border-radius:10px">Delete</a></td>            
+            </tr>
+            <tr>
+              <td><a href="#">minhyuk202523</a></td>
+              <td>Park Minhyuk</td>
+              <td>Bronze</td>
+              <td>Active</td>
+              <td><a href="#" class="btn-small waves-effect waves- red accent-4 white-text" style="border-radius:10px">Delete</a></td>            
+            <tr>
+              <td><a href="#">ddanayoon</a></td>
+              <td>Yoon Sanha</td>
+              <td>Iron</td>
+              <td>Active</td>
+              <td><a href="#" class="btn-small waves-effect waves- red accent-4 white-text" style="border-radius:10px">Delete</a></td>            
+            </tr>
+            <tr>
+                <td><a href="#" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Expand all</a></td>   
+                <td><a href="#" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Expand all</a></td>                  
+                <td><a href="#" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Expand all</a></td>  
+                <td><a href="#" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Expand all</a></td>  
+                <td></td>  
+              </tr>
+          </table>
+        </div>
+        </div>
+    </div>
+
+    <!--Jobs-->
+    <div id="jobs">
+        <h2 class="white-text" style="margin-left: 15px; margin-top:50px; margin-bottom: 0px; font-family:'Bebas Neue'">Jobs</h2>
+        <div class="row center-align">
+        <div class="col s12">
+        <form class="example" action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="material-icons">search</i></button>
+        </form>
+        <table>
+            <tr>
+              <th>Posted</th>
+              <th>Taken</th>
+              <th>Finished</th>
+            </tr>
+            <tr>
+              <td>Covid-19 Poster<br>• Issuer : phs1116<br>• Time Limit : 7 Days<br>• Minimum Rank : Bronze<br>• Reward : Rp150.000,-<br><a href="" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Details</a><a href="" class="btn-small waves-effect waves- red accent-4 white-text" style="border-radius:10px; margin-left: 10px;">Delete</a></td>
+              <td>E-Learning Web Design<br>• Issuer : wdohwan<br>• Time Limit : 1 Month<br>• Minimum Rank : Platinum<br>• Reward : Rp4.000.000,-<br><a href="" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Details</a></td>
+              <td>Infographic Covid-19<br>• Issuer : 5sos<br>• Time Limit : 1 Week<br>• Minimum Rank : Bronze<br>• Reward : Rp120.000,-<br><a href="" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Details</a></td>
+            </tr>
+            <tr>
+                <td>3x3 Instagram Olshop Feeds<br>• Issuer : skawngur<br>• Time Limit : 3 Days<br>• Minimum Rank : Iron<br>• Reward : Rp100.000,-<br><a href="" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Details</a><a href="" class="btn-small waves-effect waves- red accent-4 white-text" style="border-radius:10px; margin-left: 10px;">Delete</a></td>
+                <td>Donation Poster<br>• Issuer : heybiblee<br>• Time Limit : 2 Days<br>• Minimum Rank : Silver<br>• Reward : Rp100.000,-<br><a href="" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Details</a></td>
+                <td>Curriculum Vitae<br>• Issuer : hihyunwoo<br>• Time Limit : 1 Day<br>• Minimum Rank : Iron<br>• Reward : Rp50.000,-<br><a href="" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Details</a></td>
+              </tr>
+            <tr>
+                <td><a href="#" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Expand all</a></td>  
+                <td><a href="#" class="btn-small waves-effect waves-effect waves-dark blue darken-4 white-text" style="border-radius:10px">Expand all</a></td>  
+                <td></td>  
+              </tr>
+          </table>
+        </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="grey darken-4 center-align">
+        <div class="container grey-text" style="font-size:20px">© 2020 The Night Fury | Nilatil Moena
+        </div>
+      </footer>
+      
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("profile").style.marginLeft = "250px";
+        document.getElementById("users").style.marginLeft = "250px";
+        document.getElementById("jobs").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.getElementById("profile").style.marginLeft= "0";
+        document.getElementById("users").style.marginLeft= "0";
+        document.getElementById("jobs").style.marginLeft= "0";
+        }
+    </script>
+    </body>
+  </html>

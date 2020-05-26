@@ -11,8 +11,10 @@
     <title>The Night Fury - Log In</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
       body {
-        background-image : url("img/background.jpg")
+        background-image : url("img/background.jpg");
+        background-color: black;
       }
     </style>
   </head>
@@ -24,7 +26,7 @@
       <nav class="red accent-4">
           <div class="nav-wrapper">
               <a href="#" class="brand-logo"><img src ="img/header.png" style="height:60px; margin-left:10px"></a>
-              <ul class="right hide-on-med-and-down">
+              <ul class="right">
                   <li><a href="index.html" class="waves-effect waves-light btn black" style="border-radius:10px"><b>Home</b></a></li>
               </ul>
           </div>
@@ -32,45 +34,53 @@
     </div>
 
     <!--Login Form-->
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m4 offset-m4 center-align">
-                <h3 class="white-text" style="margin-top:40px; font-family:'Bebas Neue', cursive">Login Form</h3>
-                    <div class="card" style="border-radius:15px">
+        <div class="row center-align">
+          <div class="container valign-wrapper2">
+            <div class="col s12 m6">
+              <h1 class="white-text" style="margin-top:50px; font-family:'Bebas Neue', cursive">Sign In</h1>
+              <img class="vertical-middle" style="margin-top:50px" src="img/login.png" alt="Logo" width="440">
+            </div>
+            <div class="col s12 m6">
+                    <div class="card" style="border-radius:15px; margin-top:50px;">
                         <div class="card-content">
+                          <img class="vertical-middle" src="img/girl.png" alt="Logo" width="175">
+                          <form action="member.html">
                             <div class="input-field">
-                                <label for="username">Username</label>
-                                <input type="text" id="username" class="validate">
+                                <label for="username">Username or Email</label>
+                                <input id="username" type="text" class="validate" required>
                             </div>
-
                             <div class="input-field">
                                 <label for="password">Password</label>
-                                <input type="password" id="password" class="validate">
+                                <input type="password" id="password" class="validate" required>
                             </div>
 
-                            <form action="#" class="left-align">
-                                <p>
-                                  <label>
-                                    <input type="checkbox" />
-                                    <span>Remember me</span>
-                                  </label>
-                                </p>
-                            </form>
+                            <div class="input-field">
+                              <label for="security">Security Code</label>
+                              <input type="number" id="security" class="validate" required>
+                            </div>
+                            <h6 class="left-align" style="font-family: 'Balsamiq Sans';">We'll send a text message to your registered phone number with a login code after you click a button below. Your code is 6 numbers long.</h6>
+                            <button href="" class="btn-small waves-effect waves-dark blue darken-4 white-text left-align" style="width:20%; font-size:15px; font-family:'Balsamiq Sans', cursive; border-radius:15px">Send</button>
+                            <p>
+                              <label>
+                                  <input type="checkbox">
+                                  <span>Remember me</span>
+                              </label>
+                            </p><br>
+                                <button type="submit" class="btn-large waves-effect waves-dark blue darken-4 white-text" style="width:100%; font-size:25px; font-family:'Bebas Neue', cursive; border-radius:15px">Log in</button>
+                          </form>
 
-                            <div class="center input-field">
-                                <button class="btn-large waves-effect waves-dark blue darken-4 white-text" style="width:100%; font-size:25px; font-family:'Bebas Neue', cursive; border-radius:15px">Login</button>
                                 <p style="margin-top: 15px;">Forgot your login details?<br><a href="help.html">Get help signing in.</a></p>
                                 <p style="margin-top: 15px;">Don't have an account? <a href="register.html">Sign up.</a></p>
                             </div>
                         </div>
                     </div>
             </div>
+          </div>
         </div>
-    </div>
 
     <!--Footer-->
     <footer class="grey darken-4 center-align">
-      <div class="container grey-text" style="font-size:20px">© 2020 Copyright The Night Fury | Nilatil Moena
+      <div class="container grey-text" style="font-size:20px">© 2020 The Night Fury | Nilatil Moena
       </div>
     </footer>
 
