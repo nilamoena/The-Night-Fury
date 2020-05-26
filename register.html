@@ -12,33 +12,33 @@
     <title>The Night Fury - Register</title>
     <script src="https://apis.google.com/js/api:client.js"></script>
     <script>
-      var googleUser = {};
-      var startApp = function() {
-        gapi.load('auth2', function(){
-          // Retrieve the singleton for the GoogleAuth library and set up the client.
-          auth2 = gapi.auth2.init({
-            client_id: '952523450161-897tlid8j0sha1fekju6g6c9265sj8gq.apps.googleusercontent.com',
-            cookiepolicy: 'single_host_origin',
-            // Request scopes in addition to 'profile' and 'email'
-            //scope: 'additional_scope'
-          });
-          attachSignin(document.getElementById('google'));
-        });
-      };
-
-      function attachSignin(element) {
-        console.log(element.id);
-        auth2.attachClickHandler(element, {},
-            function(googleUser) {
-              sessionStorage.setItem("name", googleUser.getBasicProfile().getName());
-              window.location.href = "sso.html";
-              // document.getElementById('name').innerText = "Signed in: " +
-              //     googleUser.getBasicProfile().getName();
-            }, function(error) {
-              alert(JSON.stringify(error, undefined, 2));
+        var googleUser = {};
+        var startApp = function() {
+          gapi.load('auth2', function(){
+            // Retrieve the singleton for the GoogleAuth library and set up the client.
+            auth2 = gapi.auth2.init({
+              client_id: '952523450161-897tlid8j0sha1fekju6g6c9265sj8gq.apps.googleusercontent.com',
+              cookiepolicy: 'single_host_origin',
+              // Request scopes in addition to 'profile' and 'email'
+              //scope: 'additional_scope'
             });
-      }
-      </script>
+            attachSignin(document.getElementById('google'));
+          });
+        };
+  
+        function attachSignin(element) {
+          console.log(element.id);
+          auth2.attachClickHandler(element, {},
+              function(googleUser) {
+                sessionStorage.setItem("name", googleUser.getBasicProfile().getName());
+                window.location.href = "sso.html";
+                // document.getElementById('name').innerText = "Signed in: " +
+                //     googleUser.getBasicProfile().getName();
+              }, function(error) {
+                alert(JSON.stringify(error, undefined, 2));
+              });
+        }
+        </script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
